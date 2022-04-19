@@ -12,10 +12,10 @@
     <lastBuildDate>Tue, 19 Apr 2022 11:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>https://jaylife.netlify.app/posts/my-first-post/</link>
+      <link>https://jaylife.netlify.app/posts/first/</link>
       <pubDate>Tue, 19 Apr 2022 11:10:59 +0800</pubDate>
       
-      <guid>https://jaylife.netlify.app/posts/my-first-post/</guid>
+      <guid>https://jaylife.netlify.app/posts/first/</guid>
       <description>这是测试文章</description>
     </item>
     
