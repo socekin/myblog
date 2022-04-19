@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>https://jaylife.netlify.app/categories/</loc>
     <lastmod>2022-04-19T11:10:59+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/emoji/</loc>
+    <loc>https://jaylife.netlify.app/tags/emoji/</loc>
     <lastmod>2022-04-19T11:10:59+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/</loc>
+    <loc>https://jaylife.netlify.app/</loc>
     <lastmod>2022-04-19T11:10:59+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/my-first-post/</loc>
+    <loc>https://jaylife.netlify.app/posts/my-first-post/</loc>
     <lastmod>2022-04-19T11:10:59+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/</loc>
+    <loc>https://jaylife.netlify.app/posts/</loc>
     <lastmod>2022-04-19T11:10:59+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/</loc>
+    <loc>https://jaylife.netlify.app/tags/</loc>
     <lastmod>2022-04-19T11:10:59+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/themes/</loc>
+    <loc>https://jaylife.netlify.app/categories/themes/</loc>
     <lastmod>2022-04-19T11:10:59+08:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/archives/</loc>
+    <loc>https://jaylife.netlify.app/archives/</loc>
   </url>
 </urlset>
