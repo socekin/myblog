@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on 失控谜语</title>
-    <link>https://jaylife.netlify.app/posts/</link>
-    <description>Recent content in Posts on 失控谜语</description>
+    <title>博客 on 失控谜语</title>
+    <link>https://jaylife.netlify.app/categories/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on 失控谜语</description>
     <image>
       <url>https://jaylife.netlify.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
       <link>https://jaylife.netlify.app/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 19 Apr 2022 11:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.netlify.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Apr 2022 11:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.netlify.app/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>时光轮转，重拾博客</title>
       <link>https://jaylife.netlify.app/posts/first/</link>
