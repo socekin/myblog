@@ -2,27 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jaylife.netlify.app/categories/</loc>
+    <loc>http://jaylife.cc/categories/</loc>
+    <lastmod>2022-04-20T11:10:59+08:00</lastmod>
+  </url><url>
+    <loc>http://jaylife.cc/tags/hugo/</loc>
+    <lastmod>2022-04-20T11:10:59+08:00</lastmod>
+  </url><url>
+    <loc>http://jaylife.cc/posts/</loc>
+    <lastmod>2022-04-20T11:10:59+08:00</lastmod>
+  </url><url>
+    <loc>http://jaylife.cc/tags/</loc>
+    <lastmod>2022-04-20T11:10:59+08:00</lastmod>
+  </url><url>
+    <loc>http://jaylife.cc/posts/build-hugo/</loc>
+    <lastmod>2022-04-20T11:10:59+08:00</lastmod>
+  </url><url>
+    <loc>http://jaylife.cc/categories/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2022-04-20T11:10:59+08:00</lastmod>
+  </url><url>
+    <loc>http://jaylife.cc/</loc>
+    <lastmod>2022-04-20T11:10:59+08:00</lastmod>
+  </url><url>
+    <loc>http://jaylife.cc/posts/rewrite-blog/</loc>
     <lastmod>2022-04-19T11:10:59+08:00</lastmod>
   </url><url>
-    <loc>https://jaylife.netlify.app/tags/hugo/</loc>
-    <lastmod>2022-04-19T11:10:59+08:00</lastmod>
-  </url><url>
-    <loc>https://jaylife.netlify.app/posts/</loc>
-    <lastmod>2022-04-19T11:10:59+08:00</lastmod>
-  </url><url>
-    <loc>https://jaylife.netlify.app/tags/</loc>
-    <lastmod>2022-04-19T11:10:59+08:00</lastmod>
-  </url><url>
-    <loc>https://jaylife.netlify.app/categories/%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2022-04-19T11:10:59+08:00</lastmod>
-  </url><url>
-    <loc>https://jaylife.netlify.app/</loc>
-    <lastmod>2022-04-19T11:10:59+08:00</lastmod>
-  </url><url>
-    <loc>https://jaylife.netlify.app/posts/first/</loc>
-    <lastmod>2022-04-19T11:10:59+08:00</lastmod>
-  </url><url>
-    <loc>https://jaylife.netlify.app/archives/</loc>
+    <loc>http://jaylife.cc/archives/</loc>
   </url>
 </urlset>
