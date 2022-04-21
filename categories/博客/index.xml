@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>博客 on 失控谜语</title>
-    <link>http://jaylife.cc/categories/%E5%8D%9A%E5%AE%A2/</link>
+    <link>https://jaylife.cc/categories/%E5%8D%9A%E5%AE%A2/</link>
     <description>Recent content in 博客 on 失控谜语</description>
     <image>
-      <url>http://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 20 Apr 2022 11:10:59 +0800</lastBuildDate><atom:link href="http://jaylife.cc/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 20 Apr 2022 11:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用Hugo&#43;Github&#43;Netlify搭建个人博客</title>
-      <link>http://jaylife.cc/posts/build-hugo/</link>
+      <link>https://jaylife.cc/posts/build-hugo/</link>
       <pubDate>Wed, 20 Apr 2022 11:10:59 +0800</pubDate>
       
-      <guid>http://jaylife.cc/posts/build-hugo/</guid>
+      <guid>https://jaylife.cc/posts/build-hugo/</guid>
       <description>方案选择 安装Hugo 主题设置 部署到Github 发布到Netlify </description>
     </item>
     
     <item>
       <title>时光轮转，重拾博客</title>
-      <link>http://jaylife.cc/posts/rewrite-blog/</link>
+      <link>https://jaylife.cc/posts/rewrite-blog/</link>
       <pubDate>Tue, 19 Apr 2022 11:10:59 +0800</pubDate>
       
-      <guid>http://jaylife.cc/posts/rewrite-blog/</guid>
+      <guid>https://jaylife.cc/posts/rewrite-blog/</guid>
       <description>重新开始 13年过去了，我又重新开始写博客
 上一次写博客还是2009年，大学时候除了学习，就是喜欢捣鼓科技产品和网络，自学搭建了一个Wordpress，也加入了博客圈，大家相互交流，发表自己的生活感想，亦或是把自己知道的新技术、新知识分享出来，相比现在的浮躁和快节奏的生活，那时候有价值的网络内容真的很多，是博客的黄金时代。
 最近发生了很多事情，上海的疫情、工作上的裁员、互联网人35岁的焦虑，我开始思考自己未来的生活，以及应对将来要发生的一些变化，博客是一个帮助我思考的很好的工具，顺带把自己在生活中、工作中和网络中发现的有趣的内容分享出来，也算是自己的学习的沉淀，所以打算重新开始写博客，不设目标，重在沉淀和分享。
