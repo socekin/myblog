@@ -16,18 +16,13 @@
       <pubDate>Wed, 20 Apr 2022 11:10:59 +0800</pubDate>
       
       <guid>https://jaylife.cc/posts/build-hugo/</guid>
-      <description>方案选择 13年前使用的Wordpress搭建博客，因为这些年习惯用markdown写作，所以希望有支持md写博文的框架，对比了Hugo和Hexo，对于建博客来说部署难度差不多，最终选择Hugo是因为看中了现在用的这款主题PaperMod，还有就是Hugo官方文档写得非常清楚，对于我这种小白来说很友好。
+      <description>方案选择 13年前使用的Wordpress搭建博客，因为这些年习惯用markdown写作，所以打算用支持md写博文的框架，对比了Hugo和Hexo，对于建博客来说部署难度差不多，最终选择Hugo是因为看中了现在用的这款主题PaperMod，还有就是Hugo官方文档写得非常清楚，对于我这种小白来说很友好。
 当然零基础部署Hugo中间还是遇到了一些问题，我把部署过程分享出来，希望对你有帮助。我采用的部署方案是Github+Netlify，后面我会介绍这个方案的好处。
  以下教程基于macOS平台，如果是Windows平台，请参考官方教程
  安装Hugo 参照Hugo官网的教程，非常简单就安装成功，点这里
- 首先需要安装Homebrew，这是一个macOS包管理工具。复制以下命令到终端  /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 然后开始安装Hugo  brew install hugo 安装成功之后，初始化一个网站，可以把quickstart换成你想命名的文件名，初始化成功后会在电脑生成该文件目录。  hugo new site quickstart -f &amp;#34;yaml&amp;#34;  增加yaml参数是因为后续使用的主题是采用yml配置文件
- 主题设置 对于新手，一个好的主题可以节省大量的配置时间，我使用的是PaperMod主题，该主题有很多feature满足我的日常需求，比如封面、Auto Darkmode、评论集成等等，最重要的是简洁，非常推荐，更多该主题的介绍点击这里查看：PaperMod
- 安装主题  进入初始化网站的目录，quickstart，如果你更改过名字需要替换。
-cd quickstart 安装主题，之后可以在quickstart文件夹里找到themes，里面已经下载好了PaperMod主题
-git init git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod 主题设置  主题的所有可配置项参照文档按需设置，以下我介绍几个常用的配置
- 开启评论  我用的是valine评论系统，非常简洁，和PaperMod主题比较搭，你需要按valine官网获取APP_id和APP_key，点击这里查看:注册
-然后在本地站点文件夹/你的网站文件夹/layouts/partials下面新建comments.html，将以下代码复制，替换刚才注册的app id和key，保存
-&amp;lt;!DOCTYPE html&amp;gt; &amp;lt;html lang=&amp;#34;en&amp;#34;&amp;gt; &amp;lt;head&amp;gt; &amp;lt;meta charset=&amp;#34;UTF-8&amp;#34;&amp;gt; &amp;lt;title&amp;gt;Valine - A simple comment system based on Leancloud.</description>
+下载  首先需要安装Homebrew，这是一个macOS包管理工具。复制以下命令到终端  /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 然后开始安装Hugo  brew install hugo 安装成功之后，初始化一个网站，可以把quickstart换成你想命名的文件名，初始化成功后会在电脑生成该文件目录。  hugo new site quickstart -f &amp;#34;yaml&amp;#34;  增加yaml参数是因为后续使用的主题是采用yml配置文件
+ 文章结构设置 可以参照Hugo官网选择适合自己的文章组织结构方式，点这里查看，下面是我的文章目录结构。
+└── content ├── posts | ├── blog name1 // 文章名字 | | └── imgs // 该文章需要用的照片 | | └── index.md // 文章内容 | ├── blog name2 // 文章名字 | | └── imgs // 该文章需要用的照片 | | └── index.</description>
     </item>
     
     <item>
