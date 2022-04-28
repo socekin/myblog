@@ -9,7 +9,27 @@
       <link>https://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 20 Apr 2022 11:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 27 Apr 2022 11:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>按需定制，云编译OpenWRT固件</title>
+      <link>https://jaylife.cc/posts/build-openwrt/</link>
+      <pubDate>Wed, 27 Apr 2022 11:10:59 +0800</pubDate>
+      
+      <guid>https://jaylife.cc/posts/build-openwrt/</guid>
+      <description>为什么要自己编译固件 如果你在使用软路由，对于OpenWrt应该不陌生，肯定也纠结和尝试过各种网上的固件，对于大部分人来说，网上的固件是够用的，但我还是建议大家自己编译固件，因为网上的固件要么插件太多，要么自己想要的插件没有，其次就是编译的源码很多没有共享出来，你会不会也担心安全问题？
+今天给大家分享一下如何使用Github Action进行云编译OpenWrt。
+云编译 使用Github Action编译OpenWrt固件网上有很多教程，但是对于小白来说，还是不友好，我踩了不少坑，以下教程适合小白用户。
+开始之前首先感谢以下几位大佬：
+ Lean: https://github.com/coolsnowwolf/lede P3TERX: https://github.com/P3TERX/Actions-OpenWrt kenzok8: https://github.com/kenzok8/small-package fw876: https://github.com/fw876/helloworld  工具准备 首先需要准备以下工具：
+ 一个GitHub账户 一台装有Ubuntu的电脑或者虚拟机  为什么需要Ubuntu的电脑或者虚拟机呢？网上有教程通过Github Action的SSH功能也能实现编译，但是我实际验证非常容易报错和中断，所以建议大家采用Ubuntu系统来生成配置文件。
+创建Github仓库 登陆Github账户，访问P3TERX大佬的原始仓库，根据P3TERX的说明，创建自己的仓库，步骤如下：
+1.进入 P3TERX/Actions-OpenWrt 项目页面，点击页面中的 Use this template （使用这个模版）按钮。 2.填写仓库名称，然后点击Create repository from template（从模版创建储存库）按钮。 3.经过几秒钟的等待，页面会跳转到新建的仓库，内容和我的项目是相同的。然后点击Create new file（创建新文件）按钮。 4.文件名填写为.config，这里不需要填写，后面会讲如何配置。 5.翻到页面最下方，点击Commit new file（提交新文件）按钮。 修改sh（可选）  修改固件的IP地址  在Github Code页面，找到diy-part2.sh，点击编辑，修改默认IP地址，将192.168.2.1改为你想设置的地址即可。
+ 添加软件包库  在Github Code页面，找到diy-part1.sh，点击编辑，按需求增加编译时可选的软件包，以下三个是我所使用的，包含绝大部分支持OpenWRT的软件包，大家可以访问对应的地址，查看详细软件包仓库说明
+生成Config文件 P3TERX大佬的脚本其实是支持SSH访问来生成Config，但是我几经尝试均失败，最后采用本地生成Config的方法成功了。
+ 登陆Ubuntu系统，按Lean的教程进行编译  1.安装编译依赖
+sudo apt update -y sudo apt full-upgrade -y sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential \ bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib \ git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.</description>
+    </item>
+    
     <item>
       <title>使用Hugo&#43;Github&#43;Netlify搭建个人博客</title>
       <link>https://jaylife.cc/posts/build-hugo/</link>
