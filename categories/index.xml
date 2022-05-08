@@ -9,7 +9,16 @@
       <link>https://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 27 Apr 2022 11:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 May 2022 08:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Home Assistant</title>
+      <link>https://jaylife.cc/categories/home-assistant/</link>
+      <pubDate>Sun, 08 May 2022 08:10:59 +0800</pubDate>
+      
+      <guid>https://jaylife.cc/categories/home-assistant/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>OpenWrt</title>
       <link>https://jaylife.cc/categories/openwrt/</link>
