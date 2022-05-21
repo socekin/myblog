@@ -9,20 +9,7 @@
       <link>https://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 13 May 2022 08:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/categories/home-assistant/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Home Assistant入门，通过ESXI安装HassOS，必装插件推荐</title>
-      <link>https://jaylife.cc/posts/home-assistant-esxi/</link>
-      <pubDate>Fri, 13 May 2022 08:10:59 +0800</pubDate>
-      
-      <guid>https://jaylife.cc/posts/home-assistant-esxi/</guid>
-      <description>你为啥需要Home Assistant？ Node-RED是一款强大的可视化数据流自动编程工具，只需要简单的搭建Node节点，就能实现想要的自动化处理功能，非常适合与Home Assistant配合使用，实现智能家居的自动化场景。当然HA自带有自动化功能，但是Node-RED强大的节点参数，可以搭建出更丰富的自动化体验，最重要是搭建过程可视化，易于理解。
-我的HA是安装在群晖Nas上面，因为是Docker版本，没有Add-on商店，所以需要单独安装Node-RED Docker版本来使用，但是在安装过程中遇到一个坑，花了好长时间才解决，分享一下解决思路，希望对你有帮助。
-Home Assistant版本选择 按照官方教程，通过群晖NAS的Docker套件安装，会出现这个错误提示：
-&amp;gt; node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS &amp;#34;--userDir&amp;#34; &amp;#34;/data&amp;#34; 其实是权限问题，官方也给出了解决办法，采用root进行安装即可解决，但是对于使用群晖Docker套件的朋友来说，命令行还是门槛太高了，经过一番折腾，找到了适合群晖用户的解决办法，利用计划任务的用户自定义脚本来完成。
-使用ESXI安装和部署 工具准备 安装 初始化 资源占用 Add-ons 推荐 智能家居是否真的智能？ </description>
-    </item>
-    
+    <lastBuildDate>Sun, 08 May 2022 08:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/categories/home-assistant/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>如何在群晖NAS上安装Node-RED</title>
       <link>https://jaylife.cc/posts/home-assistant-nodered/</link>
