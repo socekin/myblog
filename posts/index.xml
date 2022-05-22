@@ -9,23 +9,23 @@
       <link>https://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 08 May 2022 08:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 May 2022 08:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过ESXI安装Home Assistant OS，必装插件推荐</title>
+      <link>https://jaylife.cc/posts/home-assistant-esxi/</link>
+      <pubDate>Fri, 13 May 2022 08:10:59 +0800</pubDate>
+      
+      <guid>https://jaylife.cc/posts/home-assistant-esxi/</guid>
+      <description>你为啥需要Home Assistant？ “下班回到家附近自动开启空调、开门自动开灯、看电影时自动关灯&amp;hellip;”，用过智能家居的朋友应该</description>
+    </item>
+    
     <item>
       <title>如何在群晖NAS上安装Node-RED</title>
       <link>https://jaylife.cc/posts/home-assistant-nodered/</link>
       <pubDate>Sun, 08 May 2022 08:10:59 +0800</pubDate>
       
       <guid>https://jaylife.cc/posts/home-assistant-nodered/</guid>
-      <description>Node-RED与Home Assistant配合使用 Node-RED是一款强大的可视化数据流自动编程工具，只需要简单的搭建Node节点，就能实现想要的自动化处理功能，非常适合与Home Assistant配合使用，实现智能家居的自动化场景。当然HA自带有自动化功能，但是Node-RED强大的节点参数，可以搭建出更丰富的自动化体验，最重要是搭建过程可视化，易于理解。
-我的HA是安装在群晖Nas上面，因为是Docker版本，没有Add-on商店，所以需要单独安装Node-RED Docker版本来使用，但是在安装过程中遇到一个坑，花了好长时间才解决，分享一下解决思路，希望对你有帮助。
-在Nas上安装Node-Red 按照官方教程，通过群晖NAS的Docker套件安装，会出现这个错误提示：
-&amp;gt; node $NODE_OPTIONS node_modules/node-red/red.js $FLOWS &amp;#34;--userDir&amp;#34; &amp;#34;/data&amp;#34; 其实是权限问题，官方也给出了解决办法，采用root进行安装即可解决，但是对于使用群晖Docker套件的朋友来说，命令行还是门槛太高了，经过一番折腾，找到了适合群晖用户的解决办法，利用计划任务的用户自定义脚本来完成。
-下载Node-RED镜像 打开群晖Docker套件，搜索node-red，下载镜像
-在docker文件夹内创建nodered文件夹
-通过任务计划安装 1.打开控制面板-任务计划，点击新增，创建用户自定义的脚本
-2.在常规选项中取消勾选已启动，用户账户选择root用户
-3.在计划选项中，选择不重复运行 4.在任务设置中，输入以下用户定义的脚本命令，点击保存，系统会提示root脚本的风险，点击确认 docker run -d --name nodered \ -p 1880:1880 \ -v /volume1/docker/nodered:/data \ --restart always \ nodered/node-red chown -R 1000:1000 /volume1/docker/nodered 5.返回任务计划列表，右键刚才创建的任务，点击运行，过1-2分钟之后，可以在群晖的Docker套件中，看到node-RED容器运行成功 修改时区 在群晖Docker套件中，编辑nodered容器，在高级设置中，添加一行变量TZ=&amp;ldquo;Asia/Shanghai&amp;rdquo;
-重新运行node-RED容器，通过群晖IP+1880端口进行访问，这个时候就会发现可以正常使用了。我也是第一次尝试Node-RED，后面会继续给大家分享Node-RED与HA的自动化场景设置的玩法。</description>
+      <description>Node-RED与Home Assistant配合使用 Node-RED是一款强大的可视化数据流自动编程工具，只需要简单的搭建Node节点，就能</description>
     </item>
     
     <item>
@@ -34,18 +34,7 @@
       <pubDate>Wed, 27 Apr 2022 11:10:59 +0800</pubDate>
       
       <guid>https://jaylife.cc/posts/build-openwrt/</guid>
-      <description>为什么要自己编译固件 如果你在使用软路由，对于OpenWrt应该不陌生，肯定也纠结和尝试过各种网上的固件，对于大部分人来说，网上的固件是够用的，但我还是建议大家自己编译固件，因为网上的固件要么插件太多，要么自己想要的插件没有，其次就是编译的源码很多没有共享出来，你会不会也担心安全问题？
-今天给大家分享一下如何使用Github Action进行云编译OpenWrt。
-云编译 使用Github Action编译OpenWrt固件网上有很多教程，但是对于小白来说，还是不友好，我踩了不少坑，以下教程适合小白用户。
-开始之前首先感谢以下几位大佬：
- Lean: https://github.com/coolsnowwolf/lede P3TERX: https://github.com/P3TERX/Actions-OpenWrt kenzok8: https://github.com/kenzok8/small-package fw876: https://github.com/fw876/helloworld  工具准备 首先需要准备以下工具：
- 一个GitHub账户 一台装有Ubuntu的电脑或者虚拟机  为什么需要Ubuntu的电脑或者虚拟机呢？网上有教程通过Github Action的SSH功能也能实现编译，但是我实际验证非常容易报错和中断，所以建议大家采用Ubuntu系统来生成配置文件。
-创建Github仓库 登陆Github账户，访问P3TERX大佬的原始仓库，根据P3TERX的说明，创建自己的仓库，步骤如下：
-1.进入 P3TERX/Actions-OpenWrt 项目页面，点击页面中的 Use this template （使用这个模版）按钮。 2.填写仓库名称，然后点击Create repository from template（从模版创建储存库）按钮。 3.经过几秒钟的等待，页面会跳转到新建的仓库，内容和我的项目是相同的。然后点击Create new file（创建新文件）按钮。 4.文件名填写为.config，这里不需要填写，后面会讲如何配置。 5.翻到页面最下方，点击Commit new file（提交新文件）按钮。 修改sh（可选）  修改固件的IP地址  在Github Code页面，找到diy-part2.sh，点击编辑，修改默认IP地址，将192.168.2.1改为你想设置的地址即可。
- 添加软件包库  在Github Code页面，找到diy-part1.sh，点击编辑，按需求增加编译时可选的软件包，以下三个是我所使用的，包含绝大部分支持OpenWRT的软件包，大家可以访问对应的地址，查看详细软件包仓库说明
-生成Config文件 P3TERX大佬的脚本其实是支持SSH访问来生成Config，但是我几经尝试均失败，最后采用本地生成Config的方法成功了。
- 登陆Ubuntu系统，按Lean的教程进行编译  1.安装编译依赖
-sudo apt update -y sudo apt full-upgrade -y sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential \ bzip2 ccache cmake cpio curl device-tree-compiler fastjar flex gawk gettext gcc-multilib g++-multilib \ git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libglib2.</description>
+      <description>为什么要自己编译固件 如果你在使用软路由，对于OpenWrt应该不陌生，肯定也纠结和尝试过各种网上的固件，对于大部分人来说，网上的固件是够用的</description>
     </item>
     
     <item>
@@ -54,13 +43,7 @@ sudo apt update -y sudo apt full-upgrade -y sudo apt install -y ack antlr3 ascii
       <pubDate>Wed, 20 Apr 2022 11:10:59 +0800</pubDate>
       
       <guid>https://jaylife.cc/posts/build-hugo/</guid>
-      <description>方案选择 13年前使用的Wordpress搭建博客，因为这些年习惯用markdown写作，所以打算用支持md写博文的框架，对比了Hugo和Hexo，对于建博客来说部署难度差不多，最终选择Hugo是因为看中了现在用的这款主题PaperMod，还有就是Hugo官方文档写得非常清楚，对于我这种小白来说很友好。
-当然零基础部署Hugo中间还是遇到了一些问题，我把部署过程分享出来，希望对你有帮助。我采用的部署方案是Github+Netlify，后面我会介绍这个方案的好处。
- 以下教程基于macOS平台，如果是Windows平台，请参考官方教程
- 安装Hugo 参照Hugo官网的教程，非常简单就安装成功，点这里
-下载  首先需要安装Homebrew，这是一个macOS包管理工具。复制以下命令到终端  /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 然后开始安装Hugo  brew install hugo 安装成功之后，初始化一个网站，可以把quickstart换成你想命名的文件名，初始化成功后会在电脑生成该文件目录。  hugo new site quickstart -f &amp;#34;yaml&amp;#34;  增加yaml参数是因为后续使用的主题是采用yml配置文件
- 文章结构设置 可以参照Hugo官网选择适合自己的文章组织结构方式，点这里查看，下面是我的文章目录结构。
-└── content ├── posts | ├── blog name1 // 文章名字 | | └── imgs // 该文章需要用的照片 | | └── index.md // 文章内容 | ├── blog name2 // 文章名字 | | └── imgs // 该文章需要用的照片 | | └── index.</description>
+      <description>方案选择 13年前使用的Wordpress搭建博客，因为这些年习惯用markdown写作，所以打算用支持md写博文的框架，对比了Hugo和He</description>
     </item>
     
     <item>
@@ -69,12 +52,7 @@ sudo apt update -y sudo apt full-upgrade -y sudo apt install -y ack antlr3 ascii
       <pubDate>Tue, 19 Apr 2022 11:10:59 +0800</pubDate>
       
       <guid>https://jaylife.cc/posts/rewrite-blog/</guid>
-      <description>重新开始 13年过去了，我又重新开始写博客
-上一次写博客还是2009年，大学时候除了学习，就是喜欢捣鼓科技产品和网络，自学搭建了一个Wordpress，也加入了博客圈，大家相互交流，发表自己的生活感想，亦或是把自己知道的新技术、新知识分享出来，相比现在的浮躁和快节奏的生活，那时候有价值的网络内容真的很多，是博客的黄金时代。
-最近发生了很多事情，上海的疫情、工作上的裁员、互联网人35岁的焦虑，我开始思考自己未来的生活，以及应对将来要发生的一些变化，博客是一个帮助我思考的很好的工具，顺带把自己在生活中、工作中和网络中发现的有趣的内容分享出来，也算是自己的学习的沉淀，所以打算重新开始写博客，不设目标，重在沉淀和分享。
-我会分享哪些内容 从大学开始就喜欢捣鼓科技产品和网络，以为年纪大了，就不会折腾了，现在依然能从科技产品和网络的折腾中学习到知识和获得乐趣，我会从自己在用的一些产品开始，给大家分享。
-下面这些产品极大地提升了我的生活品质和乐趣，如果你和我一样，不懂编程，但是对这些产品感兴趣又不知如何入手，欢迎关注，后面我将陆续出系列教程。
- NAS产品：DS1621+   OpenWrt和软路由产品：4415U   Home Assistant和智能家居产品  </description>
+      <description>重新开始 13年过去了，我又重新开始写博客 上一次写博客还是2009年，大学时候除了学习，就是喜欢捣鼓科技产品和网络，自学搭建了一个Wordpr</description>
     </item>
     
   </channel>

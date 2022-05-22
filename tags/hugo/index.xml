@@ -16,13 +16,7 @@
       <pubDate>Wed, 20 Apr 2022 11:10:59 +0800</pubDate>
       
       <guid>https://jaylife.cc/posts/build-hugo/</guid>
-      <description>方案选择 13年前使用的Wordpress搭建博客，因为这些年习惯用markdown写作，所以打算用支持md写博文的框架，对比了Hugo和Hexo，对于建博客来说部署难度差不多，最终选择Hugo是因为看中了现在用的这款主题PaperMod，还有就是Hugo官方文档写得非常清楚，对于我这种小白来说很友好。
-当然零基础部署Hugo中间还是遇到了一些问题，我把部署过程分享出来，希望对你有帮助。我采用的部署方案是Github+Netlify，后面我会介绍这个方案的好处。
- 以下教程基于macOS平台，如果是Windows平台，请参考官方教程
- 安装Hugo 参照Hugo官网的教程，非常简单就安装成功，点这里
-下载  首先需要安装Homebrew，这是一个macOS包管理工具。复制以下命令到终端  /bin/bash -c &amp;#34;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&amp;#34; 然后开始安装Hugo  brew install hugo 安装成功之后，初始化一个网站，可以把quickstart换成你想命名的文件名，初始化成功后会在电脑生成该文件目录。  hugo new site quickstart -f &amp;#34;yaml&amp;#34;  增加yaml参数是因为后续使用的主题是采用yml配置文件
- 文章结构设置 可以参照Hugo官网选择适合自己的文章组织结构方式，点这里查看，下面是我的文章目录结构。
-└── content ├── posts | ├── blog name1 // 文章名字 | | └── imgs // 该文章需要用的照片 | | └── index.md // 文章内容 | ├── blog name2 // 文章名字 | | └── imgs // 该文章需要用的照片 | | └── index.</description>
+      <description>方案选择 13年前使用的Wordpress搭建博客，因为这些年习惯用markdown写作，所以打算用支持md写博文的框架，对比了Hugo和He</description>
     </item>
     
     <item>
@@ -31,12 +25,7 @@
       <pubDate>Tue, 19 Apr 2022 11:10:59 +0800</pubDate>
       
       <guid>https://jaylife.cc/posts/rewrite-blog/</guid>
-      <description>重新开始 13年过去了，我又重新开始写博客
-上一次写博客还是2009年，大学时候除了学习，就是喜欢捣鼓科技产品和网络，自学搭建了一个Wordpress，也加入了博客圈，大家相互交流，发表自己的生活感想，亦或是把自己知道的新技术、新知识分享出来，相比现在的浮躁和快节奏的生活，那时候有价值的网络内容真的很多，是博客的黄金时代。
-最近发生了很多事情，上海的疫情、工作上的裁员、互联网人35岁的焦虑，我开始思考自己未来的生活，以及应对将来要发生的一些变化，博客是一个帮助我思考的很好的工具，顺带把自己在生活中、工作中和网络中发现的有趣的内容分享出来，也算是自己的学习的沉淀，所以打算重新开始写博客，不设目标，重在沉淀和分享。
-我会分享哪些内容 从大学开始就喜欢捣鼓科技产品和网络，以为年纪大了，就不会折腾了，现在依然能从科技产品和网络的折腾中学习到知识和获得乐趣，我会从自己在用的一些产品开始，给大家分享。
-下面这些产品极大地提升了我的生活品质和乐趣，如果你和我一样，不懂编程，但是对这些产品感兴趣又不知如何入手，欢迎关注，后面我将陆续出系列教程。
- NAS产品：DS1621+   OpenWrt和软路由产品：4415U   Home Assistant和智能家居产品  </description>
+      <description>重新开始 13年过去了，我又重新开始写博客 上一次写博客还是2009年，大学时候除了学习，就是喜欢捣鼓科技产品和网络，自学搭建了一个Wordpr</description>
     </item>
     
   </channel>

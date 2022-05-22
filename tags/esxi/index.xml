@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ESXI on 失控谜语</title>
+    <link>https://jaylife.cc/tags/esxi/</link>
+    <description>Recent content in ESXI on 失控谜语</description>
+    <image>
+      <url>https://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 13 May 2022 08:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/tags/esxi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过ESXI安装Home Assistant OS，必装插件推荐</title>
+      <link>https://jaylife.cc/posts/home-assistant-esxi/</link>
+      <pubDate>Fri, 13 May 2022 08:10:59 +0800</pubDate>
+      
+      <guid>https://jaylife.cc/posts/home-assistant-esxi/</guid>
+      <description>你为啥需要Home Assistant？ “下班回到家附近自动开启空调、开门自动开灯、看电影时自动关灯&amp;hellip;”，用过智能家居的朋友应该</description>
+    </item>
+    
+  </channel>
+</rss>
