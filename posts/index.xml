@@ -9,7 +9,16 @@
       <link>https://jaylife.cc/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 22 May 2022 08:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 18 Jun 2022 08:10:59 +0800</lastBuildDate><atom:link href="https://jaylife.cc/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>元宇宙是什么？Web3.0又是什么？</title>
+      <link>https://jaylife.cc/posts/metaverse-and-web3/</link>
+      <pubDate>Sat, 18 Jun 2022 08:10:59 +0800</pubDate>
+      
+      <guid>https://jaylife.cc/posts/metaverse-and-web3/</guid>
+      <description>元宇宙里那些神秘的概念 元宇宙、NFT、Web3、数字钱包、DeFi、GameFi&amp;hellip;，时下这些神秘又“高大上”的词汇，相信你多少</description>
+    </item>
+    
     <item>
       <title>通过ESXI安装Home Assistant OS，必装插件推荐</title>
       <link>https://jaylife.cc/posts/home-assistant-esxi/</link>
